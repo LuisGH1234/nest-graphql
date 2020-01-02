@@ -1,0 +1,6 @@
+declaration accepts: | null | []   | [null] | [{foo: 'BAR'}]
+------------------------------------------------------------------------
+[Vote!]!             | no   | yes  | no     | yes
+[Vote]!              | no   | yes  | yes    | yes
+[Vote!]              | yes  | yes  | no     | yes
+[Vote]               | yes  | yes  | yes    | yes
