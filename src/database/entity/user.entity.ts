@@ -31,8 +31,9 @@ export class User extends BaseDomain {
 
     @BeforeInsert()
     beforeInsert() {
-        if (this.password && this.password.length > 0)
+        if (this.password && this.password.length > 0) {
             this.password = bcrypt.hashSync(this.password, bcrypt.genSaltSync(10));
+        }
     }
 
     compare(password: string): boolean {

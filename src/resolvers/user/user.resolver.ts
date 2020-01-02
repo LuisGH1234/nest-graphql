@@ -1,6 +1,6 @@
 import { Resolver, Query, ResolveProperty, Parent, Args } from '@nestjs/graphql';
 import { UserService } from './user.service';
-import { UserType, UserArgs, UserPaginationResult } from './typedef/user';
+import { UserType, UserArgs, UserPaginationResult } from '../../schema/user';
 import { UseGuards } from '@nestjs/common';
 
 @Resolver(of => UserType)
